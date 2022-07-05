@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1em;
+  width: 80%;
+  margin: 0 auto 2em;
+}
+
+.header__title {
+  font-variant: small-caps;
+}
+
+.todo {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  padding-left:0;
+}
+
+.header__input-form input, .header__input-form button{ 
+  padding: 0.5em;
+  margin: 1em;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.header__input-form button:hover {
+  cursor: pointer;
+}
+
+.todo--not-completed {
+  display:flex;
+  justify-content: space-between;
+  padding: 1em;
+  width: 70%;
+  margin: 1em auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-variant: small-caps;
+  order:1;
+}
+
+.todo--not-completed:hover {
+  background-color: lavender;
+  cursor: pointer;
+}
+
+.todo--completed {
+  display:flex;
+  justify-content: space-between;
+  background-color: lightcoral;
+  padding: 1em;
+  width: 70%;
+  margin: 1em auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-variant: small-caps;
+  order:2;
+}
+
+.todo--completed:hover {
+  cursor: pointer;
+}
+
+.todo--completed p {
+  text-decoration: line-through;
+}
+
+.todo__button--remove {
+  padding: 1em;
+  color: black;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.todo__button--remove:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
